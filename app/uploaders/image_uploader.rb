@@ -10,11 +10,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :qiniu
   #storage :fog
 
-  # if Rails.env.production?
-  #   storage :fog
-  # elsif Rails.env.development?
-  #   storage :file
-  # end
+  if Rails.env.production?
+    storage :fog
+  elsif Rails.env.development?
+    storage :file
+  end
   #
   # if Rails.env.post?
   #   storage :fog
