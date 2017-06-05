@@ -5,6 +5,8 @@
   <div class = "col-md-6 col-md-offset-3 quiz-content">
     <h3>我的<<%= @quiz.title %>>考卷</h3>
     <br>
+    <div id="getting-started">
+    <br>
     <p><%= @quiz.description %></p>
     <hr>
     <p class="quiz-content-title">单项选择题（共5题； 每小题20分，满分100分）</p>
@@ -24,3 +26,13 @@
 
   </div>
 </div>
+
+<script type="text/javascript">
+  $("#getting-started")
+
+  .countdown("2017/06/07", function(event) {
+    $(this).text(
+      event.strftime('%D 天 %H:%M:%S')
+    );
+  });
+</script>
