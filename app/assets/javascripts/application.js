@@ -12,13 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+
 //= require masonry/jquery.masonry
-//= require bootstrap
+
 //= require bootstrap-sprockets
 //= require jquery.raty
 //= require ratyrate
 //= require social-share-button
 //= require social-share-button/wechat
+//= require bootstrap/dropdown
+//= require bootstrap/alert
 //= require_tree .
 
 $(document).ready(function() {
